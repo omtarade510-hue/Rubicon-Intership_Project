@@ -1,43 +1,41 @@
-# Rubicon-Intership_Project
-AI-Based Expense Tracker (Tkinter GUI) project
-# 💰 Student Finance & Productivity Hub
+# 💰 Smart Expense Tracker
 
-A modern desktop application built using **Python, Tkinter, and SQLite** to help students manage expenses, productivity, and academic planning in one place.
+A modern desktop-based expense management system developed using **Python, Tkinter (CustomTkinter), and SQLite**.
+
+The application helps users manage daily expenses, categorize spending, and analyze financial habits through a clean and interactive graphical user interface.
 
 ---
 
 ## 📌 Project Overview
 
-Student Finance & Productivity Hub is a GUI-based desktop application designed for engineering students to manage daily expenses, attendance, study planning, and productivity efficiently.
+Smart Expense Tracker is a GUI-based desktop application that allows users to:
 
-The application provides a clean interface for tracking student spending habits, monitoring attendance, and organizing academic activities.
+- Add and manage expenses
+- Categorize spending
+- Store records in SQLite database
+- Generate financial reports
+- Visualize spending patterns
+
+This project is designed to simplify personal expense management through an easy-to-use desktop interface.
 
 ---
 
 ## ✨ Features
 
 ### 💸 Expense Management
-- Add and manage expenses
-- Categorize expenses
+- Add new expenses
+- Categorize expenses (Food, Travel, Bills, Shopping, etc.)
+- Save data securely using SQLite
+
+### 📊 Reports & Analytics
 - Monthly expense tracking
-- Budget alerts
+- Expense summary
+- Spending analysis using charts
 
-### 📚 Student Productivity
-- Attendance calculator
-- Study planner
-- Task manager
-- Exam reminders
-
-### 📊 Analytics
-- Expense reports
-- Pie chart visualization
-- Monthly spending analysis
-- Category-wise reports
-
-### 🌙 UI Features
-- Modern Tkinter GUI
-- Dark/Light Mode
-- User-friendly dashboard
+### 🎨 GUI Features
+- Modern UI using CustomTkinter
+- Clean dashboard interface
+- Responsive buttons and forms
 
 ---
 
@@ -46,48 +44,94 @@ The application provides a clean interface for tracking student spending habits,
 | Technology | Purpose |
 |------------|---------|
 | Python | Backend Logic |
-| Tkinter / CustomTkinter | GUI Development |
+| Tkinter | GUI Development |
+| CustomTkinter | Modern UI Design |
 | SQLite | Database |
-| Matplotlib | Data Visualization |
-| Pandas | Data Processing |
+| Matplotlib | Charts & Graphs |
+| Pandas | Data Analysis |
 
 ---
 
 ## 📂 Project Structure
 
-```bash
-StudentFinanceHub/
+```txt
+SmartExpenseTracker/
 │── main.py
 │── database.py
+│── login.py
 │── dashboard.py
-│── expense_manager.py
-│── attendance.py
-│── analytics.py
+│── add_expense.py
+│── reports.py
+│
 │── assets/
+│   ├── icon.png
+│   ├── bg.png
+│
 │── database/
-│── screenshots/
-│── README.md
+│   └── expense.db
 
+```
 
-⚙️## Installation
-Clone Repository
-git clone https://github.com/your-username/student-finance-hub.git
-Move into Project Folder
-cd student-finance-hub
-Install Dependencies
+---
+
+## ⚙️ Installation
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/SmartExpenseTracker.git
+```
+
+### 2. Navigate to Project Folder
+
+```bash
+cd SmartExpenseTracker
+```
+
+### 3. Install Required Libraries
+
+```bash
 pip install customtkinter matplotlib pandas pillow
+```
 
-Run Project
+### 4. Run the Project
+
+```bash
 python main.py
+```
 
-🚀 Future Scope
-Cloud synchronization
-AI expense prediction
-Mobile version
-Smart spending suggestions
-Multi-user support
-👨‍💻 Author
+---
 
-Om Tarade
+## 🗄️ Database Schema
 
+### Table: `expenses`
+
+| Column Name | Data Type |
+|-------------|------------|
+| id | INTEGER |
+| title | TEXT |
+| amount | REAL |
+| category | TEXT |
+| date | TEXT |
+
+--
+
+---
+
+## 🚀 Future Enhancements
+
+- Dark/Light mode
+- Expense prediction
+- Budget alerts
+- Export reports to PDF/CSV
+- Multi-user login system
+
+---
+
+## 👨‍💻 Author
+
+Om Tarade  
 Computer Engineering Student
+
+
+This project is created for educational and learning purposes.
